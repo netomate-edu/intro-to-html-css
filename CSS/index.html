@@ -3,31 +3,83 @@
 
 <head>
     <title>Introduction to website development</title>
-    <link href="./style.css" rel="stylesheet" />
+    <!-- <link href="./style.css" rel="stylesheet" /> -->
+
+    <style>
+        body {
+            margin: 20px
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        div {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        h1 {
+            background-color: teal;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #quick-links {
+            background-color: limegreen;
+        }
+
+        .intro-section {
+            text-align: left;
+        }
+
+        .intro-section>a,
+        .footer-links>li>a {
+            color: red;
+        }
+
+        .footer-links>li>a:hover {
+            color: blue;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1 id="page-header">Introduction to Website Development</h1>
 
-    <h3 class="heading-blue">HTML</h3>
-    <p>HTML stands for hyper-text markup language. It is used to structure a webpage</p>
+    <h1>Welcome</h1>
 
-    <h3 class="heading-green">CSS</h3>
-    <p>CSS stands for cascading style sheet. It is used to style HTML elements and describe how the webpage should look
-        like.</p>
+    <p>I love to code.</p>
+    <p>I am excited about HTML</p>
 
-    <h3 class="heading-blue">Javascript</h3>
-    <p>Javascript is a programming language. It is used to program the webpage to become dynamic</p>
+    <div class="intro-section">
+        <h3>About me</h3>
+        <p>I am a nice guy. Connect with me on twitter</p>
+        <a href="https://twitter.com/efosa_j">Twitter</a>
+    </div>
 
-    <h3 class="heading-green">Django</h3>
-    <p>Django is a web framework for creating dynamic web pages.</p>
-
-    <h1>Our Team</h1>
-    <ul>
-        <li>Chris John (Manager)</li>
-        <li>Juliet Susan (Asst. Manager)</li>
-        <li>Tony Alao (Secretary)</li>
+    <h1 id="quick-links">Quick link</h1>
+    <ul class="footer-links">
+        <li>
+            <a hrefquick-links="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About Us</a>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
     </ul>
+
+    <div>Copyright &copy; 2023</div>
+
+
 </body>
 
 </html>
